@@ -82,6 +82,10 @@
 
 
 .div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     grid-area: 1 / 1 / 9 / 9;
     background-color: #101214;
 }
@@ -116,7 +120,6 @@
     cursor: pointer;
     border-radius: 10px;
 }
-
 .rotate180 {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -257,8 +260,14 @@ img {
     background-color: #AE2E24;
     color: #fff;
     cursor: pointer;
+    text-align: center;
+    width: 80%;
+    max-width: 150px;
 }
 
 .button:hover{
     background-color: #AE2E24;
 }
+
+
+

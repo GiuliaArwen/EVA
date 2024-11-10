@@ -1,4 +1,5 @@
 let page_now;
+let mainCameraId = 'camera_0'
 
 addEventListener("resize", (event) => {
     let h = window.innerHeight;
@@ -29,6 +30,7 @@ function switching(id) {
     deploy.append(camera_p.firstElementChild);
     info["cameras"][n_camera]["status"] = 0;
     info["cameras"][z]["status"] = 1;
+    mainCameraId = target.querySelector('video').id;
 }
 
 async function onoff(id) {
@@ -122,8 +124,8 @@ function ROVLoader() {
 }
 
 let rotationAngle = 0;
-function rotateVideo(camera){
-    const video = document.getElementById(camera);
+function rotateVideo(){
+    const video = document.getElementById(mainCameraId);
     rotationAngle += 90;
     video.style.transform =  `rotate(${rotationAngle}deg)`;
 }

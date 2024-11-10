@@ -63,9 +63,9 @@
                 <div class="title">Camera 0</div>
                 <!--<img id="camera_0" class="rotate180 rotate90" src="file:///home/vboxuser/Desktop/EVA_2025/gui/template/ROV_files/stream_002">-->
                 <video id="camera_0" class = "video-container" src="{{url_for('static', filename='rain0.mp4')}}" muted autoplay loop></video>
-                <button class = "button" onclick = "rotateVideo('camera_0')"> Rotate 90° </button>
             </div>
         </div>
+        <button class = "button" onclick = "rotateVideo()"> Rotate 90° </button>
     </div>
     <div class="div3">
         <div class="camera_s">
@@ -73,17 +73,17 @@
                 <div class="title">Camera 1</div>
                 <!-- <img id="camera_1" src="file:///home/vboxuser/Desktop/EVA_2025/gui/template/ROV_files/stream"> -->
                 <video id="camera_1" class = "video-container" src="{{url_for('static', filename='rain0.mp4')}}" muted autoplay loop></video>
-                <button class = "button" onclick = "rotateVideo('camera_1')"> Rotate 90° </button>
             </div>
         </div>  
+        <!-- <button class = "button" onclick = "rotateVideo('camera_1')"> Rotate 90° </button> -->
         <div class="camera_s">
             <div id="c2" class="screen" onclick="switching(&#39;camera_2&#39;)">
                 <div class="title">Camera 2</div>
                 <!-- <img id="camera_2" src="file:///home/vboxuser/Desktop/EVA_2025/gui/template/ROV_files/stream_003"> -->
                 <video id="camera_2" class = "video-container" src="{{url_for('static', filename='rain0.mp4')}}" muted autoplay loop></video>
-                <button class = "button" onclick = "rotateVideo('camera_2')"> Rotate 90° </button>
             </div>
         </div>
+        <!-- <button class = "button" onclick = "rotateVideo('camera_2')"> Rotate 90° </button> -->
     </div>
 
 
